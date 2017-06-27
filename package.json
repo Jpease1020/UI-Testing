@@ -1,0 +1,50 @@
+{
+  "name": "acceptance-tests",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "node_modules/mocha/bin/mocha",
+    "test-debug": "node_modules/mocha/bin/mocha --debug-brk"
+  },
+  "dependencies": {
+    "bluebird": "^3.0.6",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "hbs": "~4.0.1",
+    "http-status-codes": "^1.0.6",
+    "morgan": "~1.8.1",
+    "pug": "^2.0.0-beta6",
+    "request": "^2.74.0",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-multiselect": "^0.9.13-1",
+    "chai": "^3.4.1",
+    "grunt": "^0.4.5",
+    "grunt-artifactory-artifact": "^0.8.0",
+    "grunt-cli": "^1.1.0",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jenkins": "^0.8.0",
+    "grunt-mocha-istanbul": "^4.0.2",
+    "grunt-run": "^0.5.2",
+    "grunt-shell": "^1.2.1",
+    "grunt-text-replace": "^0.4.0",
+    "istanbul": "^0.4.5",
+    "jquery": "^3.1.1",
+    "jquery.maskedinput": "^1.4.1",
+    "mocha": "^2.3.4",
+    "nodemon": "^1.11.0",
+    "nsp": "^2.6.2",
+    "sinon": "^1.17.6",
+    "supertest": "^1.1.0"
+  }
+}
