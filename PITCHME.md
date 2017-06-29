@@ -74,6 +74,9 @@
   *It should aim to:*
 
     * Execute the intended functionality of the application using the GUI
+      * Screen Navigation
+      * Field Validation
+      * Screen to screen workflow
     * Check Error Messages are displayed correctly
 +++
   *It should not aim to:*
@@ -83,7 +86,8 @@
     The above will lead to brittle tests subject to minor changes in screen design rather than focusing on core application functionality
 
     These latter aims should be reserved for manual testing.
-
+---
+![UI Testing Architecture](assets/selenium.png)
 ---
 ### CI/CD Acceptance Tests
   * Questions?
