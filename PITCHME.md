@@ -72,14 +72,15 @@
     * A subset of true GUI Testing.
 
   *It should aim to:*
-  * Execute the intended functionality of the application using the GUI
-  * Check Error Messages are displayed correctly
+
+    * Execute the intended functionality of the application using the GUI
+    * Check Error Messages are displayed correctly
 +++
   *It should not aim to:*
+
   * Check font sizes, colors, alignment, positioning ....
 
-    The above will lead to brittle tests subject to minor changes in screen design rather
-    than focusing core application functionality
+    The above will lead to brittle tests subject to minor changes in screen design rather than focusing on core application functionality
 
     These latter aims should be reserved for manual testing.
 
