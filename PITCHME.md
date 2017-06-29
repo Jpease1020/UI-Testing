@@ -87,7 +87,8 @@
 
     These latter aims should be reserved for manual testing.
 ---
-![UI Testing Architecture](assets/selenium.png&size=auto 90%)
+###UI Testing Architecture
+<img src="assets/selenium.png" height="90%">
 ---
 ### CI/CD Acceptance Tests
   * Questions?
