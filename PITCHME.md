@@ -133,10 +133,10 @@ Tool | Description
 **Nightmare** | An alternative to PhantomJS
 ---
 ### UI Testing Architecture
-<img src="./assets/md/assets/selenium.png" height=500>
+<img src="./assets/selenium.png" height=500>
 ---
 ### Possible Future UI Testing Architecture
-<img src="./assets/md/assets/saucelabs.jpg" height=500>
+<img src="./assets/saucelabs.jpg" height=500>
 ---
 ### Live Example Using CodeceptJS
 _Recording of sample unit test coding (TBD)_
