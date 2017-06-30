@@ -1,4 +1,4 @@
----
+
 ##Compozed Global Lunch and Learn
 ### CI/CD Acceptance Tests
 
@@ -71,7 +71,7 @@
   * Acceptance Testing of the UI in Compozed is:
     * A subset of true GUI Testing.
 
-  *It should aim to:*
+    *It should aim to:*
 
     * Execute the intended functionality of the application using the GUI
       * Screen Navigation
@@ -83,12 +83,63 @@
 
   * Check font sizes, colors, alignment, positioning ....
 
-    The above will lead to brittle tests subject to minor changes in screen design rather than focusing on core application functionality
+    These latter aims should be reserved for manual testing. Focusing on the above can lead to brittle tests subject to minor changes in screen design.
 
-    These latter aims should be reserved for manual testing.
+    Automated tests are code and should be subject to refactoring as a consequence. Design, review and refactor of DSL code (Domain Specific Language) can reduce the brittleness of test cases.
+
+    _**Am I testing the intent..**_
+
 ---
-###UI Testing Architecture
-<img src="assets/selenium.png" height=500>
+### Headless vs Std. Browser Tests
+##### Std Browser
+  * Closer to real life use of the application
+  * Chrome & Firefox available
+  * Can be tested in the pipeline
+  * Can view success & failures as they happen
+  * _Slower_
+  * _Varying/Maintaining Browser Types & Versions_
+  * _IE not available on our platforms_
+
++++
+### Headless vs Std Browser Tests
+##### Headless Browser
+  * Faster
+  * _Further from real life use of the application_
+  * _Will not highlight browser differences_
+
+  _Despite the obvious cons, headless currently more widely used because:_
+  * Performance
+  * Testing focused on the 'intended functionality of the application'
+
+---
+### Tools
+Tool | Description
+------------ | -------------
+**Selenium Webdriver** | Accepts commands via a Client API and sends them to a browser. Listens on port 4444
+**PhantomJS** | An alternative to the above, not as widely used. Also provides a headless browser which can be used independently
++++
+Tool | Description
+------------ | -------------
+**Protractor** | An end-to-end testing framework, support for Angular
+**CodeceptJS** | A promise based UI testing framework providing easy to read testing code
++++
+Tool | Description
+------------ | -------------
+**chai** | Supporting component providing '_expect_' assertion code
+**PhantomJS** | A headless browser providing screen capture capability
++++
+Tool | Description
+------------ | -------------
+**Nightmare** | An alternative to PhantomJS
+---
+### UI Testing Architecture
+<img src="./assets/md/assets/selenium.png" height=500>
+---
+### Possible Future UI Testing Architecture
+<img src="./assets/md/assets/saucelabs.jpg" height=500>
+---
+### Live Example Using CodeceptJS
+_Recording of sample unit test coding (TBD)_
 ---
 ### CI/CD Acceptance Tests
   * Questions?
