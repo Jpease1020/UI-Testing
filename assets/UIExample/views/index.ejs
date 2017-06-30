@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/app.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/app_team.css" />
+  <script src="/assets/scripts/libs/aic-1.6.0.min.js"></script>
+  <title>Home Page</title>
+</head>
+<body >
+
+	<header>
+    <h3 class="txt txt--size-36 vr--x2">UI Tests Example</h3>
+	</header>
+
+	<main>
+    <form id="formRequestCustomDataId" name="formRequestCustomData">
+      <fieldset>
+        <p class="txt--size-16 txt--color-red allFieldsRequiredWarning">All fields are required.</p>
+        <div class="radioButtonLabel">
+          <p class="txt--size-14 txt--weight-medium radioButtonLabel">Priority</p>
+        </div>
+        <div class="vr">
+          <label class="option" for="radio--criticalId" id="lblradio--criticalId" onClick="priorityImpactDisplay('critical')">
+            <input class="option__input" type="radio" id="radio--criticalId" value="critical" name="radio--priority"/>
+            <span class="option__icon option__icon--radio" ></span>
+            <span class="option__text">Critical<p class="txt--size-12">Legal/business risk</p></span>
+          </label>
+          <label class="option" for="radio--mustId" id="lblradio--mustId" onClick="priorityImpactDisplay('must')">
+            <input class="option__input" type="radio" id="radio--mustId" value="must" name="radio--priority"/>
+            <span class="option__icon option__icon--radio"></span>
+            <span class="option__text">Must<p class="txt--size-12">Significant impact</p></span>
+          </label>
+          <label class="option" for="radio--needId" id="lblradio--needId" onClick="priorityImpactDisplay('need')">
+            <input class="option__input" type="radio" id="radio--needId" value="need" name="radio--priority"/>
+            <span class="option__icon option__icon--radio"></span>
+            <span class="option__text">Need<p class="txt--size-12">Some impact</p></span>
+          </label>
+        </div>
+        <div id="priorityImpactPanelId" class="vr" style="display:none">
+          <label class="txt--size-14 txt--color-black txt--weight-medium" for="priorityImpactFieldId">Priority Impact</label>
+          <input id="priorityImpactFieldId" class="input" type="text" name="priorityImpactField">
+          <div class="txt--size-12">Please explain the expected impact.</div>
+        </div>
+        <div class="vr">
+          <label class="txt--size-14 txt--color-black txt--weight-medium" for="businessNeedFieldId">Business Need</label>
+          <textarea id="businessNeedFieldId" class="input input--textarea" name="businessNeedField" maxlength="1000"></textarea>
+          <div class="txt--size-12">What is the purpose/use of this report?</div>
+        </div>
+        <div class="vr">
+          <label class="txt--size-14 txt--color-black txt--weight-medium" for="descriptionFieldId">Description</label>
+          <textarea id="descriptionFieldId" class="input input--textarea" name="descriptionField" maxlength="1000"></textarea>
+          <div class="txt--size-12">Please describe the type and format of the data you would like.</div>
+        </div>
+        <div id="customFileStartDatePanelId" class="datepicker js-datepicker">
+            <label class="txt--size-14 txt--color-black txt--weight-medium" for="customFileStartDateId">Date Range</label>
+            <input id="customFileStartDateId" name="customFileStartDate" class="input input--lg js-dateInput js-dateMask" type="text" placeholder="MM-DD-YYYY" maxlength="10"/>
+            <button type="button" class="datepicker__btn js-datepickerTrigger"></button>
+            <div class="calendar js-datepickerTarget" aria-hidden="true">
+              <div id="month-wrap">
+                <button class="calendar__btn calendar__btn--prev" tabindex="0">go to previous month</button>
+                <div class="calendar__month" role="heading" aria-live="assertive" aria-atomic="true">January 2015</div>
+                <button class="calendar__btn calendar__btn--next" tabindex="0">go to next month</button>
+              </div>
+              <table class="calendar__table" role="grid" aria-activedescendant="errMsg" aria-labelledby="month" tabindex="0">
+                <thead>
+                  <tr class="calendar__table__weekdays">
+                    <th id="Sunday">
+                      <abbr title="Sunday">Sun</abbr>
+                    </th>
+                    <th id="Monday">
+                      <abbr title="Monday">Mon</abbr>
+                    </th>
+                    <th id="Tuesday">
+                      <abbr title="Tuesday">Tue</abbr>
+                    </th>
+                    <th id="Wednesday">
+                      <abbr title="Wednesday">Wed</abbr>
+                    </th>
+                    <th id="Thursday">
+                      <abbr title="Thursday">Thu</abbr>
+                    </th>
+                    <th id="Friday">
+                      <abbr title="Friday">Fri</abbr>
+                    </th>
+                    <th id="Saturday">
+                      <abbr title="Saturday">Sat</abbr>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="errMsg" colspan="7">Javascript must be enabled</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="customDataStartDateErrorId" class="hint hint--hasError vr">&nbsp;</div>
+        </div>
+        <div class="txt--size-16 txt--color-dkGray txt--weight-bold" style="display:inline-block;position:relative;top:-30px">&nbsp;-&nbsp;</div>
+        <div id="customFileEndDatePanelId" class="datepicker js-datepicker">
+          <label class="txt--size-14 txt--color-black txt--weight-medium" for="customFileEndDateId">&nbsp;</label>
+            <input id="customFileEndDateId" name="customFileEndDate" class="input input--lg js-dateInput js-dateMask" type="text" placeholder="MM-DD-YYYY" maxlength="10"/>
+            <button type="button" class="datepicker__btn js-datepickerTrigger"></button>
+            <div class="calendar js-datepickerTarget" aria-hidden="true">
+              <div id="month-wrap">
+                <button class="calendar__btn calendar__btn--prev" tabindex="0">go to previous month</button>
+                <div class="calendar__month" role="heading" aria-live="assertive" aria-atomic="true">January 2015</div>
+                <button class="calendar__btn calendar__btn--next" tabindex="0">go to next month</button>
+              </div>
+              <table class="calendar__table" role="grid" aria-activedescendant="errMsg" aria-labelledby="month" tabindex="0">
+                <thead>
+                  <tr class="calendar__table__weekdays">
+                    <th id="Sunday">
+                      <abbr title="Sunday">Sun</abbr>
+                    </th>
+                    <th id="Monday">
+                      <abbr title="Monday">Mon</abbr>
+                    </th>
+                    <th id="Tuesday">
+                      <abbr title="Tuesday">Tue</abbr>
+                    </th>
+                    <th id="Wednesday">
+                      <abbr title="Wednesday">Wed</abbr>
+                    </th>
+                    <th id="Thursday">
+                      <abbr title="Thursday">Thu</abbr>
+                    </th>
+                    <th id="Friday">
+                      <abbr title="Friday">Fri</abbr>
+                    </th>
+                    <th id="Saturday">
+                      <abbr title="Saturday">Sat</abbr>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="errMsg" colspan="7">Javascript must be enabled</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="customDataEndDateErrorId" class="hint hint--hasError vr">&nbsp;</div>
+    </fieldset>
+  </form>
+    <br>
+    <div class="dialog__footer">
+        <div class="control">
+            <ul class="control__group">
+                    <li>
+                       <a id="customDataCancelButtonId" href="#" class="btn btn--link btn__hideDialog">Cancel</a>
+                    </li>
+                    <li>
+                       <button type="button" class="btn btn--orange" id="btnCustomDataId">Submit</button>
+                    </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+	</main>
+
+	<footer>
+	</footer>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('input[name=selFileType]').click(enableUpload)
+})
+</script>

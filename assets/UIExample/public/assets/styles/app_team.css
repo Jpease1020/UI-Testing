@@ -1,0 +1,230 @@
+.split__left {
+  width: 60%;
+  text-align: left;
+}
+
+.split__right {
+  width: 40%;
+  text-align: right;
+}
+
+.split__right__textLeft {
+  width: 40%;
+  text-align: left;
+}
+
+.footer__logo--partner--generic {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    float: right;
+  }
+
+.footer__logo--ARS {
+  width: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  position: relative;
+  /*display: inline-block;*/
+  /*right: 50px;*/
+  /*float: right;*/
+}
+
+#ARSLogoWrapper {
+  fill: #999999;
+   width:75%;
+   height: 100%;
+   float:right;
+}
+
+#PartnerLogoWrapper {
+  width:25%;
+  height: 100%;
+  float:right;
+}
+
+#ARSLogoId {
+  float:right;
+}
+
+#logoId {
+  padding-top: 25px;
+}
+
+
+.flexbox__body {
+  /*Additional style entry - primary style defined in app.css*/
+  flex-shrink:0;
+}
+
+
+
+label.upload input[type="file"] {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   font-size: 0px;
+   filter: alpha(opacity=0);
+   cursor: pointer;
+  }
+
+.highlightGreen {
+    color: #72b325;
+}
+
+.showBadge {
+   display: inline-block;
+   position: relative;
+   top: -15px;
+   left: 15px;
+   min-width: 10px;
+   padding: 3px 7px;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 1;
+   color: #fff;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   background-color: #72b325;
+   border-radius: 10px;
+}
+
+.hideBadge {
+   visibility: hidden;
+}
+
+#announcementsGridId td {
+  vertical-align: top;
+}
+
+#announcementsGridInternalId td {
+  vertical-align: top;
+}
+
+#announcementsGridContainerId {
+  display: inline-block;
+  width:65%;
+  vertical-align: top;
+  padding-top: 0;
+  /*padding-right: 1rem;*/
+  padding-left: 0;
+}
+
+
+#homePageFileGridContainerId {
+  display: inline-block;
+  width:34%;
+  /*margin-left: 10px;*/
+  vertical-align: top;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.announcementsHeaders {
+  color: #004a88; }
+
+.padding--top--half {
+  padding-top: 0.5rem; }
+
+.partnersPill {
+     padding: 3px 10px 4px 10px;
+     font-size: 12px;
+     font-weight: 700;
+     line-height: 1;
+     color: #fff;
+     text-align: center;
+     vertical-align: middle;
+     background-color: #822B8F;
+     border-radius: 10px;
+  }
+
+  .RequestAFile {
+    background-color: #cccccc;
+    padding: 10px 0 10px 10px;
+  }
+
+  .RequestAFileBtn {
+    margin-top: 7px;
+  }
+
+  #dialogModalRequestAFileId{
+    border-radius: 15px;
+  }
+
+  #dialogModalRequestAFileId .dialog__wrap {
+    padding: 0;
+  }
+
+  .requestAFileHeader {
+     text-align:center;
+     padding-top: 20px;
+  }
+
+  .requestAFileTabSelected {
+    border-top: 5px solid #1666af;
+    color: #1666af;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .requestAFileTabNotSelected {
+    background-color: #1666af;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+
+  .requestAFileDisclaimer {
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #formRequestAnExistingFileId, #formRequestCustomDataId {
+      padding-left: 15px;
+      padding-right:15px;
+  }
+
+  .allFieldsRequiredWarning {
+      margin-bottom: 1rem;
+  }
+
+  #formRequestAnExistingFileId, #formRequestCustomDataId .datepicker__btn {
+      margin-top: 35px;
+  }
+
+  .affix--inside--post .svgRequestAFileSearch {
+      border-left: 0;
+      background-color: transparent;
+      margin-top: 25px;
+      padding: 0;
+  }
+
+  #formRequestCustomDataId .option {
+      display: inline-flex;
+  }
+
+  .option__text p {
+      line-height: 50%;
+  }
+
+  .radioButtonLabel {
+    margin-bottom: 2px;
+    line-height: 80%;
+  }
+
+  #descriptionFieldId {
+    min-height: 10rem
+  }
