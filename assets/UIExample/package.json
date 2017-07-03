@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "acc": "./node_modules/.bin/codeceptjs run --steps",
+    "acc1": "./node_modules/.bin/codeceptjs run --steps -f"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
@@ -14,5 +16,13 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "codeceptjs": "^0.5.0",
+    "mocha": "^3.4.2",
+    "phantomjs": "^2.1.7",
+    "selenium-standalone": "^6.5.0",
+    "webdriverio": "^4.8.0"
   }
 }

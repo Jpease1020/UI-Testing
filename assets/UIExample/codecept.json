@@ -1,0 +1,24 @@
+{
+  "tests": "./test/acceptance/*.js",
+  "timeout": 10000,
+  "output": "./test/acceptance/output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://localhost:3000",
+      "browser" : "phantomjs",
+      "windowSize": "maximize",
+      "desiredCapabilities" : {
+        "phantomjs.binary.path" : "./node_modules/.bin/phantomjs"
+      }
+    }
+  },
+  "include": {},
+  "bootstrap": false,
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "output"
+    }
+  },
+  "teardown": "./test/acceptance/codecept/shutdownServices.js",
+  "name": "b2b-portal-ars"
+}

@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="/assets/styles/app.css" />
   <link rel="stylesheet" type="text/css" href="/assets/styles/app_team.css" />
-  <script src="/assets/scripts/libs/aic-1.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/scripts/jquery-ui-1.11.4/jquery-ui.min.css" />
   <title>Home Page</title>
 </head>
 <body >
@@ -13,6 +13,29 @@
 	</header>
 
 	<main>
+    <div class="message message--hasConfirm" id="successPanelId" style="display:none">
+        <i id='closeMessageId' class="message__icon-close">+</i>
+        <div class="message__icon">
+            <i class="icon icon--assertive"></i>
+        </div>
+        <div class="message__bd">
+            <ul id="ulSuccessListId">
+            </ul>
+        </div>
+    </div>
+    <div class="message message--hasAlert" id="errorPanelId" style="display:none">
+        <i class="message__icon-close">+</i>
+        <div class="media">
+            <div class="media__media">
+                <i class="icon icon--error"></i>
+            </div>
+            <div class="media__bd">
+                <span class="hdg hdg--bold" id="errorTextSpanId"></span>
+                <ul id="ulErrorListId">
+                </ul>
+            </div>
+        </div>
+    </div>
     <form id="formRequestCustomDataId" name="formRequestCustomData">
       <fieldset>
         <p class="txt--size-16 txt--color-red allFieldsRequiredWarning">All fields are required.</p>
@@ -165,10 +188,18 @@
 
 
 </body>
+<script src="/assets/scripts/libs/aic-1.6.0.min.js"></script>
+<script src="/assets/scripts/core.min.js"></script>
+<script src="/assets/scripts/global-header.plugin.js"></script>
+<script src="/assets/scripts/nav.js"></script>
+<script src="/assets/scripts/utilities.js"></script>
+<script src="/assets/scripts/flexdialog.plugin.js"></script>
+<script src="/assets/scripts/global.js"></script>
+<script src="/assets/scripts/toggle-core.plugin.js"></script>
+<script src="/assets/scripts/datepicker_plugin.js"></script>
+<script src="/assets/scripts/closeWarningMessage.plugin.js"></script>
+<script src="/assets/scripts/moment.min.js"></script>
+<script src="/assets/scripts/jquery.cookie.js"></script>
+<script src="/javascripts/acceptance.js"></script>
+<script src="/assets/scripts/jquery-ui-1.11.4/jquery-ui.min.js"></script>
 </html>
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $('input[name=selFileType]').click(enableUpload)
-})
-</script>
