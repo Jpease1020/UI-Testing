@@ -140,6 +140,7 @@ Tool | Description
 ---
 ### Live Example Using CodeceptJS
 _Recording of sample unit test coding (TBD)_
+![Cartoon](file://172.30.23.255/users/localadmin/Public/Acceptance-testing.mov)
 ---
 ### CI/CD Acceptance Tests
   * Questions?
