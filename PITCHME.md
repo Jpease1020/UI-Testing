@@ -92,7 +92,7 @@
 
 ---
 ### Acceptance Criteria
-  * Every acceptance criteria noted in user story should be covered an acceptance test
+  * Every acceptance criteria statement noted in a user story should be covered in an acceptance test
   * Adding a map between user story ID and acceptance test cases can offer a traceability matrix
 ---
 ### Headless vs Std. Browser Tests
@@ -144,9 +144,9 @@ Tool | Description
 <img src="./assets/saucelabs.jpg" height=500>
 ---
 ### Live Example Using CodeceptJS
-_Recording of sample unit test coding_
 
-![Cartoon](http://172.30.23.255:8000/Acceptance-testing.mov)
+
+![_Recording of sample unit test coding_](http://172.30.23.255:8000/Acceptance-testing.mp4)
 
 ---
 ### CI/CD Acceptance Tests
