@@ -144,7 +144,7 @@ Tool | Description
 <img src="./assets/saucelabs.jpg" height=500>
 ---
 ### Live Example Using CodeceptJS
-![Video](http://172.30.23.255:8000/Acceptance-testing.mp4)
+![Cartoon](http://172.30.23.255:8000/Acceptance-testing.mp4)
 
 ---
 ### CI/CD Acceptance Tests
