@@ -90,6 +90,10 @@
     _**Am I testing the intent..**_
 
 ---
+### Acceptance Criteria
+  * Every acceptance criteria noted in user story should be covered an acceptance test
+  * Adding a map between user story ID and acceptance test cases could offer traceability matrix
+---
 ### Headless vs Std. Browser Tests
 ##### Std Browser
   * Closer to real life use of the application
@@ -139,8 +143,8 @@ Tool | Description
 <img src="./assets/saucelabs.jpg" height=500>
 ---
 ### Live Example Using CodeceptJS
-_Recording of sample unit test coding (TBD)_
-![Cartoon](file://172.30.23.255/users/localadmin/Public/Acceptance-testing.mov)
+_Recording of sample unit test coding_
+[link to "Live" Coding Demo!](file://172.30.23.255/users/localadmin/Public/Acceptance-testing.mov)
 ---
 ### CI/CD Acceptance Tests
   * Questions?
