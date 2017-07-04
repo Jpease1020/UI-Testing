@@ -146,7 +146,7 @@ Tool | Description
 ### Live Example Using CodeceptJS
 
 
-![_Recording of sample unit test coding_](http://172.30.23.255:8000/Acceptance-testing.mp4)
+![Video](http://172.30.23.255:8000/Acceptance-testing.mp4)
 
 ---
 ### CI/CD Acceptance Tests
