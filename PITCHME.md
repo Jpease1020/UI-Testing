@@ -94,6 +94,7 @@
 ### Acceptance Criteria
   * Every acceptance criteria statement noted in a user story should be covered in an acceptance test
   * Adding a map between user story ID and acceptance test cases can offer a traceability matrix
+  * Should be validated on as close to a production environment as practical
 ---
 ### Headless vs Std. Browser Tests
 ##### Std Browser
@@ -126,7 +127,7 @@ Tool | Description
 Tool | Description
 ------------ | -------------
 **Protractor** | An end-to-end testing framework, support for Angular
-**CodeceptJS** | A promise based UI testing framework providing easy to read testing code
+**CodeceptJS** | A promise based UI testing framework providing easy to read testing code. Also has support for Angular
 ---
 Tool | Description
 ------------ | -------------
