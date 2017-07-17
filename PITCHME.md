@@ -23,7 +23,7 @@
   * Front end: UI Tests
   * Back end: Smoke/End-to-End Tests
 +++
-  * CI Pipeline
+#### CI Pipeline
     * Acceptance tests come before deploying to UAT/TEST environment
       * Assuming DEV --> UAT --> PRE-PROD environments
     * Acceptance tests can be run in DEV environment
