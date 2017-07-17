@@ -165,4 +165,5 @@ At some point in this presentation, there is a good chance Tyler, Charles, and m
 ![Logo](https://media.giphy.com/media/r0g5Yfk3eRgqs/giphy.gif)
 +++
 ![Logo](https://media.giphy.com/media/l2SpUoAPo0CBOkyxq/giphy.gif)
-+++![Logo](https://media.giphy.com/media/3o6ZtbT1Uu5NGTUqCQ/giphy.gif)
++++
+![Logo](https://media.giphy.com/media/3o6ZtbT1Uu5NGTUqCQ/giphy.gif)
