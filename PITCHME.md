@@ -62,14 +62,14 @@
     * Run after deploying new apps/infrastructure and may not need run these for every code change but I recommend before deployments or intermittently.
 +++
 ### Health Check Endpoint Tests
-    * Create a health route which calls each service and posts the status codes to the route.
-    * Goes beyond acceptance test functionality and lends itself well to application support
+   * Create a health route which calls each service and posts the status codes to the route.
+   * Goes beyond acceptance test functionality and lends itself well to application support
 +++
-    * Trigger: Deployed application
-    * Test: Call the Endpoint and check the response is a 200
-    * Results:
-      * Success: All service calls return 200 - Results in App is HEALTHY!
-      * Failure: If one service returns a 500 - App is SICK!
+   * Trigger: Deployed application
+   * Test: Call the Endpoint and check the response is a 200
+   * Results:
+     * Success: All service calls return 200 - Results in App is HEALTHY!
+     * Failure: If one service returns a 500 - App is SICK!
 ---
 ### Back End
   * End-to-End Tests
