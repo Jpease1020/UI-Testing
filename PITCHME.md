@@ -35,26 +35,22 @@
   * Tightly coupled to a user story, acceptance tests must be one or more tests to verify that a story has been properly implemented.
   * One benefit of Agile story writing is that the story itself provides the text of the acceptance tests. This outline is in the form of acceptance criteria. Consider the following example of a story sourced from a fictional, crowdsourced weather application:
   * A user story card contains a short description of the behavior of the system from the point of view of the customer.
++++
   Example -
   * As a guest user, I would like to post a weather observation, so that other people enquiring about the weather have accurate, real-time information.
-+++
   * Acceptance Criteria:
-    * Given that I am on the weather observation submission page, When I submit a weather observation using the form, Then I should be redirected to the weather observations index page and see the weather observation I posted.
-    * The concept hiding in the acceptance criteria is Behavior Driven Development (BDD). This is an oversimplification, but BDD can be thought of as an evolution of TDD which focuses on using sentences to describe behaviors of the system and implementing tests to match the sentences. We will use BDD as part of our approach.
+    > As A User
+    > Given that I am on the weather observation submission page,
+    > When I submit a weather observation using the form,
+    > Then I should be redirected to the weather observations index page and see the weather observation I posted.
+
+  * The concept hiding in the acceptance criteria is Behavior Driven Development (BDD). This is an oversimplification, but BDD can be thought of as an evolution of TDD which focuses on using sentences to describe behaviors of the system and implementing tests to match the sentences. We will use BDD as part of our approach.
 ---
 ### Back End
   * Smoke Tests
-    * Determine if the app will run.  Ignoring unit and acceptance tests, smoke tests are written to run the basic application with its dependencies and services (like databases) to see if the application will deploy or catch on fire (hence the smoke).
-    * Run after deploying new apps/infrastructure
-
----
-### Back End
-  * End-to-End Tests
-    * Ensures data flows with the right values from beginning to end.
-    * Just my thoughts - Is there a difference between acceptance tests and integration? If the back end is collecting, modifying and serving data, then unit tests and integration tests will cover the scenario.
-
----
-### Back End
+    * Determine if the app will run.  Ignoring unit and acceptance tests, smoke tests are written to run the basic application with its dependencies and services (like databases) connected to see if the application will deploy or catch on fire (hence the smoke).
+    * Run after deploying new apps/infrastructure.  Run intermittently.
++++
   * Health Check Endpoint Tests
     * Works well on web applications
       * Create a health route which calls each service and posts the status codes to the route.
@@ -65,9 +61,15 @@
       * Success: All service calls return 200 - Results in App is HEALTHY!
       * Failure: If one service returns a 500 - App is SICK!
 
+
+---
+### Back End
+  * End-to-End Tests
+    * Ensures data flows with the right values from beginning to end.
+    * Blurred lines - Is there a difference between acceptance and integration tests? If the back end is collecting, modifying and serving data, will unit tests and integration tests will cover the scenario?
+    * One scenario may be a test that hits a route in your app and expects back certain data.  Not testing the controller (unit) individually or the methods/functions written to get the data and transform it before handing it over to the controller but the full process.
 ---
 ### Front End
-
     *Should aim to:*
 
     * Execute the intended functionality of the application using the GUI
@@ -124,7 +126,8 @@
 Tool | Description
 ------------ | -------------
 **Selenium Webdriver** | Accepts commands via a Client API and sends them to a browser. Listens on port 4444
-**PhantomJS** | An alternative to the above, not as widely used. Also provides a headless browser which can be used independently
+**PhantomJS** | An alternative to the above, not as widely used. Also provides a headless browser which can be used independently.  *The sole current maintainer is stepping down with chrome headless coming out.*
+**Chrome Headless** | (Chrome 59)
 ---
 Tool | Description
 ------------ | -------------
@@ -143,9 +146,6 @@ Tool | Description
 ### UI Testing Architecture
 <img src="./assets/selenium.png" height=500>
 ---
-### Possible Future UI Testing Architecture
-<img src="./assets/saucelabs.jpg" height=500>
----
 ### Sample Process fro Writing Acceptance Tests
   * Read the acceptance criteria for a story
   * Write your test name to match that as best as possible
@@ -163,8 +163,11 @@ _Copy link address below, download file and play_
 
 ---
 ### CI/CD Acceptance Tests
-  * Questions?
+  * Anyone have any new insights about CI/CD and Acceptance Testing after listening to this presentation?
+  * Anyone disagree with anything or want to challenge any of the ideas presented?
+  * Any Questions?
 
   Sources:
+   - Clyde Hunt, Even Gryska, Adam Hale, Ryan Lennon, Roy Harris
    - https://www.tutorialspoint.com/extreme_programming/extreme_programming_quick_guide.htm
   - Galvanize curriculum for Charlotte Accelerator
