@@ -28,7 +28,7 @@
   * Running the full set of unit and integration tests before each integration of new code will show if any test fails, it is that pair’s code that is failing the system and should reduce if not eliminate broken code being pushed through the pipeline.
   * Front end: UI Tests
   * Back end: Smoke Tests & End-to-End Tests
-+++
+---
 #### CI Pipeline
   * Acceptance tests come before deploying to UAT environment
     * Assuming DEV --> UAT --> Prod environments
@@ -44,7 +44,7 @@
   * Every acceptance criteria statement noted in a user story should be covered in an acceptance test. They can also be used for test descriptions.
   * Adding a map between user story ID in tracker and acceptance test cases in commits can offer a traceability matrix
 ---
-  Example -
+###  Example
   * As a guest user, I would like to post a weather observation, so that other people enquiring about the weather have accurate, real-time information.
 +++
   * Acceptance Criteria:
@@ -86,15 +86,14 @@
   * Check Error Messages are displayed correctly
 ---
   * Should not aim to: Check font sizes, colors, alignment, positioning etc.
-
-    These latter aims should be reserved for manual testing. Focusing on the above can lead to brittle tests subject to minor changes in screen design.
-
-    Automated tests are code and should be subject to refactoring as a consequence.
+  * These latter aims should be reserved for manual testing. Focusing on the above can lead to brittle tests subject to minor changes in screen design.
+  * Automated tests are code and should be subject to refactoring as a consequence.
 
 ---
 ### Connecting external services or not in testing
   * Mocking/stubbing the app's dependencies and services?
   * In our app, we make many get/post/update calls to service now.  They have a few test apis that are cloned from their real one. This allows our tests to mimic almost exactly what’s happening in our testing suite but the feedback loop is slow.
++++
   * Unit tests can be written to test your code independently of external services which verify that the functions you have written behave as expected with out the bulk and lag time of connecting them to other external apis.
 ---
 ### Headless vs Browser Tests
@@ -119,10 +118,10 @@ Tool | Description
 ------------ | -------------
 **Selenium Webdriver** | Accepts commands via a Client API and sends them to a browser. Listens on port 4444
 **PhantomJS** | An alternative to the above, not as widely used. Also provides a headless browser which can be used independently.  *The sole current maintainer is stepping down with chrome headless coming out.*
-**Chrome Headless** | (Chrome 59)
 ---
 Tool | Description
 ------------ | -------------
+**Chrome Headless** | (Chrome 59)
 **Protractor** | An end-to-end testing framework, support for Angular
 **CodeceptJS** | A promise based UI testing framework providing easy to read testing code. Also has support for Angular
 ---
