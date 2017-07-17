@@ -118,18 +118,18 @@ Tool | Description
 ------------ | -------------
 **Selenium Webdriver** | Accepts commands via a Client API and sends them to a browser. Listens on port 4444
 **PhantomJS** | An alternative to the above, not as widely used. Also provides a headless browser which can be used independently.  *The sole current maintainer is stepping down with chrome headless coming out.*
----
++++
 Tool | Description
 ------------ | -------------
 **Chrome Headless** | (Chrome 59)
 **Protractor** | An end-to-end testing framework, support for Angular
 **CodeceptJS** | A promise based UI testing framework providing easy to read testing code. Also has support for Angular
----
++++
 Tool | Description
 ------------ | -------------
 **chai** | Supporting component providing '_expect_' assertion code
 **PhantomJS** | A headless browser providing screen capture capability
----
++++
 Tool | Description
 ------------ | -------------
 **Nightmare** | An alternative to PhantomJS
