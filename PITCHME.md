@@ -3,7 +3,9 @@
 ### CI/CD Acceptance Tests
 ---
 ### CI/DC
-  * Continuous Integration and Continuous Delivery/Deployment are two agile practices that merges development with testing, allowing developers to build code collaboratively, submit it the master branch, and checked for issues. This allows developers to not only build their code, but also test their code in any environment type and as often as possible to catch bugs early in the applications development lifecycle. It provides an immediate feedback loop allowing developers to test and incorporate small changes one at a time as soon as the code it written for an individual feature, chore, bug fix or refactor.
+  * Continuous Integration and Continuous Delivery/Deployment are two agile practices that merges development with testing, allowing developers to build code collaboratively, submit it the master branch, and checked for issues. This allows developers to not only build their code, but also test their code in any environment type and as often as possible to catch bugs early in the applications development lifecycle.
++++
+  It provides an immediate feedback loop allowing developers to test and incorporate small changes one at a time as soon as the code it written for an individual feature, chore, bug fix or refactor.
 
   * Continuous Integration
     * Code is integrated and tested many times a day, one set of changes at a time.  "The main aim of CI is to prevent integration problems, referred to as "integration hell" in early descriptions of XP." - Wikipedia
