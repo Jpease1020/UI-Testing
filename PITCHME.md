@@ -8,7 +8,7 @@
   * It provides an immediate feedback loop allowing developers to test and incorporate small changes one at a time as soon as the code it written for an individual feature, chore, bug fix or refactor.
 ---
 ### Continuous Integration
-    * Code is integrated and tested many times a day, one set of changes at a time.  "The main aim of CI is to prevent integration problems, referred to as "integration hell" in early descriptions of XP." - Wikipedia
+  * Code is integrated and tested many times a day, one set of changes at a time.  "The main aim of CI is to prevent integration problems, referred to as "integration hell" in early descriptions of XP." - Wikipedia
 ---
 ### Continuous Delivery
     * Continuous delivery (CD) is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims at building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.
