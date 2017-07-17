@@ -177,6 +177,7 @@ At some point in this presentation, there is a good chance Tyler, Charles, Phil 
 +++
 ![Logo](https://media.giphy.com/media/r0g5Yfk3eRgqs/giphy.gif)
 +++
-![Logo](https://giphy.com/gifs/miamiopen-l0IyhdVAFdKe5WuQM)
+![Logo](https://media1.giphy.com/media/l0IyhdVAFdKe5WuQM/giphy.gif)
+
 +++
 ![Logo](https://giphy.com/gifs/slamball-slam-ball-l0IygsTd0XPi9Q1cA)
