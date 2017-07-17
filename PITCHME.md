@@ -61,7 +61,7 @@
     * Determine if the app will run.  Ignoring unit and acceptance tests, smoke tests are written to run the basic application with its dependencies and services (like databases) connected to see if the application will deploy or catch on fire (hence the smoke).
     * Run after deploying new apps/infrastructure and may not need run these for every code change but I recommend before deployments or intermittently.
 +++
-  * Health Check Endpoint Tests
+### Health Check Endpoint Tests
     * Create a health route which calls each service and posts the status codes to the route.
     * Goes beyond acceptance test functionality and lends itself well to application support
 +++
