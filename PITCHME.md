@@ -15,7 +15,7 @@
 ---
 ### Acceptance Tests
   * Part of the CI/CD pipeline process and the process of TDD (test driven development)
-  * Automated tests ensuring the environment/application is successfully built to allow for manual User Acceptance testing.  The system always improves and never backslides.
+  * Automated tests ensure the environment/application is successfully built to allow for manual User Acceptance testing.  The system always improves and never backslides.
   * Tests that all units, when used together, work as per the feature's specification in as close to an environment as possible to the production environment.
   * Along with unit tests, they ensure that new code and changes made by a pair works.
   * Running the full set of unit and integration tests before each integration of new code will show if any test fails, it is that pair’s code that is failing the system and should reduce if not eliminate broken code being pushed through the pipeline.
