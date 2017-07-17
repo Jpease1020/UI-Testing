@@ -76,7 +76,7 @@
     * Ensures data flows with the right values from beginning to end.
     * One scenario may be a test that hits a route in your app and expects back certain data. This does not test the controller individually or the methods/functions written to get the data and transform it before handing it over to the controller but the full process.
 +++
-    * Is there a need for backend acceptance tests if you already have quality unit and integration tests? If the back end is collecting, modifying and serving data, will unit tests and integration tests will cover the scenario? Or is it better to have the extra test coverage? I lean towards the later but you and your team need to decide what makes sense for you.
+    * Is there a need for backend acceptance tests if you already have quality unit and integration tests? If the back end is collecting, modifying and serving data, will unit tests and integration tests will cover the scenario? Or is it better to have the extra test coverage? I lean towards the later but you and your team need to decide what makes sense for you as long as compliance is cool.
 ---
 ### Front End
   * Should aim to execute the intended functionality of the application using the GUI
