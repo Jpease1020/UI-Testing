@@ -142,6 +142,7 @@ Tool | Description
   * Write your test name to match that as best as possible
   * Write expectations to assert the completion of said criteria
   * Access elements on page to click, type into, submit, etc to mimic the user experience leading up to the expected result.
++++
   * Write code and unit test new functions until acceptance test passes spiking where needed.
   * Look for sad paths and write another test to cover it.
   * Refactor tests and code where needed.
@@ -151,7 +152,7 @@ Tool | Description
   * Anyone have any new insights about CI/CD and Acceptance Testing after listening to this presentation?
   * Anyone disagree with anything or want to challenge any of the ideas presented?
   * Any Questions?
-
+---
   Sources:
    - Clyde Hunt, Even Gryska, Adam Hale, Ryan Lennon, Roy Harris
    - https://www.tutorialspoint.com/extreme_programming/extreme_programming_quick_guide.htm
