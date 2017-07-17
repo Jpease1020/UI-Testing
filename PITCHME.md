@@ -3,7 +3,7 @@
 ### CI/CD Acceptance Tests
 ---
 ### CI/DC
-  * Continuous Integration and Continuous Delivery/Deployment are two agile practices that merges development with testing, allowing developers to build code collaboratively, submit it the master branch, and checked for issues. This allows developers to not only build their code, but also test their code in any environment type and as often as possible to catch bugs early in the applications development lifecycle.
+  * Continuous Integration and Continuous Delivery/Deployment are two agile practices that merges development with testing, allowing developers to build code collaboratively, submit it the master branch, and checked for issues. This allows developers to not only build their code but also test their code in any environment type and as often as possible to catch bugs early in the applications development lifecycle.
 +++
   * It provides an immediate feedback loop allowing developers to test and incorporate small changes one at a time as soon as the code it written for an individual feature, chore, bug fix or refactor.
 ---
@@ -172,3 +172,9 @@ _Copy link address below, download file and play_
    - Clyde Hunt, Even Gryska, Adam Hale, Ryan Lennon, Roy Harris
    - https://www.tutorialspoint.com/extreme_programming/extreme_programming_quick_guide.htm
   - Galvanize curriculum for Charlotte Accelerator
+---
+At some point in this presentation, there is a good chance Tyler, Charles, Phil and maybe even Cameron will try and ask a silly question to trip me up or embarrass me during this presentation.  Please, at this moment I will ask everyone to turn to the person who caused me to bring up this slide and shake your head and or finger in a shamming manner and shame them for their unprofessional behavior.
++++
+![Logo](https://media.giphy.com/media/r0g5Yfk3eRgqs/giphy.gif)
++++
+![Logo]()
