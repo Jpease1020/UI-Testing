@@ -15,7 +15,8 @@
 ---
 ### Acceptance Tests
   * Part of the CI/CD pipeline process and the process of TDD (test driven development)
-  * Automated tests ensure the environment/application is successfully built to allow for manual User Acceptance testing.  The system always improves and never backslides.
+  * Automated tests ensure the environment/application works in all environments allowing for manual User Acceptance testing after each new code addition.
+  * The system always improves and never backslides.
   * Tests that all units, when used together, work as per the feature's specification in as close to an environment as possible to the production environment.
 +++
   * Along with unit tests, they ensure that new code and changes made by a pair works.
@@ -23,12 +24,11 @@
   * Front end: UI Tests
   * Back end: Smoke/End-to-End Tests
 +++
-  * CI Pipeline
-    * Acceptance tests come before deploying to UAT/TEST environment
-      * Assuming DEV --> UAT --> PRE-PROD environments
-    * Acceptance tests can be run in DEV environment
-    * Ensures environment/application is up and running for manual user acceptance testing to be performed
-    * Automated tests that ensure newly deployed code works in environment
+#### CI Pipeline
+  * Acceptance tests come before deploying to UAT environment
+    * Assuming DEV --> UAT --> Prod environments
+  * Acceptance tests can be run in local and DEV environment
+  * Ensures environment/application is up and running for manual user acceptance testing to be performed
 
 ---
 ### Acceptance Tests and User Stories
