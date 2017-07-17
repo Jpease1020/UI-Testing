@@ -153,9 +153,9 @@ Tool | Description
   * Anyone disagree with anything or want to challenge any of the ideas presented?
   * Any Questions?
 ---
-  Sources:
-   - Clyde Hunt, Even Gryska, Adam Hale, Ryan Lennon, Roy Harris
-   - https://www.tutorialspoint.com/extreme_programming/extreme_programming_quick_guide.htm
+### Sources:
+  - Clyde Hunt, Even Gryska, Adam Hale, Ryan Lennon, Roy Harris
+  - https://www.tutorialspoint.com/extreme_programming/extreme_programming_quick_guide.htm
   - Galvanize curriculum for Charlotte Accelerator
 ---
 ![Logo](https://media1.giphy.com/media/l0IyhdVAFdKe5WuQM/giphy.gif)
