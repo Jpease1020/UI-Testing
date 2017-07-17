@@ -20,6 +20,7 @@
   * Part of the CI/CD pipeline process and the process of TDD (test driven development)
   * Automated tests ensure the application works in all environments allowing for manual User Acceptance testing after each new code addition.
   * The system always improves and never backslides. Each new change should be built upon an already tested and working system.
++++
   * Acceptance testing tests that all units, when used together, work as per the feature's specification in as close to an environment as possible to the production environment.
   * Should be validated on as close to a production environment as practical
 +++
@@ -45,6 +46,7 @@
 ---
   Example -
   * As a guest user, I would like to post a weather observation, so that other people enquiring about the weather have accurate, real-time information.
++++
   * Acceptance Criteria:
     > As A User
     > Given that I am on the weather observation submission page,
@@ -62,6 +64,7 @@
   * Health Check Endpoint Tests
     * Create a health route which calls each service and posts the status codes to the route.
     * Goes beyond acceptance test functionality and lends itself well to application support
++++
     * Trigger: Deployed application
     * Test: Call the Endpoint and check the response is a 200
     * Results:
@@ -72,21 +75,17 @@
   * End-to-End Tests
     * Ensures data flows with the right values from beginning to end.
     * One scenario may be a test that hits a route in your app and expects back certain data. This does not test the controller individually or the methods/functions written to get the data and transform it before handing it over to the controller but the full process.
++++
     * Is there a need for backend acceptance tests if you already have quality unit and integration tests? If the back end is collecting, modifying and serving data, will unit tests and integration tests will cover the scenario? Or is it better to have the extra test coverage? I lean towards the later but you and your team need to decide what makes sense for you.
 ---
 ### Front End
-    *Should aim to:*
-
-    * Execute the intended functionality of the application using the GUI
-      * Screen Navigation
-      * Field Validation
-      * Screen to screen workflow
-      * Check Error Messages are displayed correctly
+  * Should aim to execute the intended functionality of the application using the GUI
+  * Screen Navigation
+  * Field Validation
+  * Screen to screen workflow
+  * Check Error Messages are displayed correctly
 ---
-
-  *Should not aim to:*
-
-  * Check font sizes, colors, alignment, positioning ....
+  * Should not aim to: Check font sizes, colors, alignment, positioning etc.
 
     These latter aims should be reserved for manual testing. Focusing on the above can lead to brittle tests subject to minor changes in screen design.
 
