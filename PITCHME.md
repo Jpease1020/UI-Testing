@@ -84,7 +84,7 @@
   * Field Validation
   * Screen to screen workflow
   * Check Error Messages are displayed correctly
----
++++
   * Should not aim to: Check font sizes, colors, alignment, positioning etc.
   * These latter aims should be reserved for manual testing. Focusing on the above can lead to brittle tests subject to minor changes in screen design.
   * Automated tests are code and should be subject to refactoring as a consequence.
