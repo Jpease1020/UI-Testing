@@ -24,10 +24,10 @@
   * Back end: Smoke/End-to-End Tests
 +++
 #### CI Pipeline
-    * Acceptance tests come before deploying to UAT/TEST environment
-      * Assuming DEV --> UAT --> PRE-PROD environments
-    * Acceptance tests can be run in DEV environment
-    * Ensures environment/application is up and running for manual user acceptance testing to be performed
+* Acceptance tests come before deploying to UAT/TEST environment
+  * Assuming DEV --> UAT --> PRE-PROD environments
+ * Acceptance tests can be run in DEV environment
+  * Ensures environment/application is up and running for manual user acceptance testing to be performed
     * Automated tests that ensure newly deployed code works in environment
 
 ---
