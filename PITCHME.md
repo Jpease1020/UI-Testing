@@ -5,12 +5,11 @@
 ### CI/DC
   * Continuous Integration and Continuous Delivery/Deployment are two agile practices that merges development with testing, allowing developers to build code collaboratively, submit it the master branch, and checked for issues. This allows developers to not only build their code, but also test their code in any environment type and as often as possible to catch bugs early in the applications development lifecycle.
 +++
-  It provides an immediate feedback loop allowing developers to test and incorporate small changes one at a time as soon as the code it written for an individual feature, chore, bug fix or refactor.
+  * It provides an immediate feedback loop allowing developers to test and incorporate small changes one at a time as soon as the code it written for an individual feature, chore, bug fix or refactor.
 
   * Continuous Integration
     * Code is integrated and tested many times a day, one set of changes at a time.  "The main aim of CI is to prevent integration problems, referred to as "integration hell" in early descriptions of XP." - Wikipedia
-
-
++++
   * Continuous Delivery
     * Continuous delivery (CD) is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims at building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.
 ---
@@ -22,6 +21,7 @@
   * Running the full set of unit and integration tests before each integration of new code will show if any test fails, it is that pair’s code that is failing the system and should reduce if not eliminate broken code being pushed through the pipeline.
   * Front end: UI Tests
   * Back end: Smoke/End-to-End Tests
++++
   * CI Pipeline
     * Acceptance tests come before deploying to UAT/TEST environment
       * Assuming DEV --> UAT --> PRE-PROD environments
@@ -31,22 +31,15 @@
 
 ---
 ### Acceptance Tests and User Stories
-
   * Tightly coupled to a user story, acceptance tests must be one or more tests to verify that a story has been properly implemented.
-
   * One benefit of Agile story writing is that the story itself provides the text of the acceptance tests. This outline is in the form of acceptance criteria. Consider the following example of a story sourced from a fictional, crowdsourced weather application:
-
   * A user story card contains a short description of the behavior of the system from the point of view of the customer.
-
   Example -
   * As a guest user, I would like to post a weather observation, so that other people enquiring about the weather have accurate, real-time information.
-
++++
   * Acceptance Criteria:
-
     * Given that I am on the weather observation submission page, When I submit a weather observation using the form, Then I should be redirected to the weather observations index page and see the weather observation I posted.
-
     * The concept hiding in the acceptance criteria is Behavior Driven Development (BDD). This is an oversimplification, but BDD can be thought of as an evolution of TDD which focuses on using sentences to describe behaviors of the system and implementing tests to match the sentences. We will use BDD as part of our approach.
-
 ---
 ### Back End
   * Smoke Tests
