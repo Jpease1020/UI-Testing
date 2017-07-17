@@ -18,6 +18,7 @@
   * Automated tests ensure the environment/application works in all environments allowing for manual User Acceptance testing after each new code addition.
   * The system always improves and never backslides.
   * Tests that all units, when used together, work as per the feature's specification in as close to an environment as possible to the production environment.
+  * Should be validated on as close to a production environment as practical
 +++
   * Along with unit tests, they ensure that new code and changes made by a pair works.
   * Running the full set of unit and integration tests before each integration of new code will show if any test fails, it is that pair’s code that is failing the system and should reduce if not eliminate broken code being pushed through the pipeline.
@@ -44,7 +45,8 @@
     > When I submit a weather observation using the form,
     > Then I should be redirected to the weather observations index page and see the weather observation I posted.
 
-  * The concept hiding in the acceptance criteria is Behavior Driven Development (BDD). This is an oversimplification, but BDD can be thought of as an evolution of TDD which focuses on using sentences to describe behaviors of the system and implementing tests to match the sentences. We will use BDD as part of our approach.
+  * The concept hiding in the acceptance criteria is Behavior Driven Development (BDD). This is an oversimplification, but BDD can be thought of as an evolution of TDD which focuses on using sentences to describe behaviors of the system and implementing tests to match the sentences.
+  * *I have an example later on*
 ---
 ### Back End
   * Smoke Tests
@@ -67,7 +69,7 @@
   * End-to-End Tests
     * Ensures data flows with the right values from beginning to end.
     * Blurred lines - Is there a difference between acceptance and integration tests? If the back end is collecting, modifying and serving data, will unit tests and integration tests will cover the scenario?
-    * One scenario may be a test that hits a route in your app and expects back certain data.  Not testing the controller (unit) individually or the methods/functions written to get the data and transform it before handing it over to the controller but the full process.
+    * One scenario may be a test that hits a route in your app and expects back certain data. This does not test the controller individually or the methods/functions written to get the data and transform it before handing it over to the controller but the full process.
 ---
 ### Front End
     *Should aim to:*
@@ -89,10 +91,9 @@
     Automated tests are code and should be subject to refactoring as a consequence.
 
 ---
-### Acceptance Criteria
+### User Story Acceptance Criteria
   * Every acceptance criteria statement noted in a user story should be covered in an acceptance test. They can also be used for test descriptions.
   * Adding a map between user story ID and acceptance test cases can offer a traceability matrix
-  * Should be validated on as close to a production environment as practical
 ---
 ### Connecting external services vs not in testing
   * Some think you should not mocks/stubs the apps dependencies and services.
